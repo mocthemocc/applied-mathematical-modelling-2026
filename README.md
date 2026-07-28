@@ -1,4 +1,4 @@
-# applied-mathematical-modelling-2026
+# Applied-Mathematical-Modelling-2026
 Applied Mathematical Modelling group project, including weekly progress, research, mathematical models, data, code, reports, and presentation materials.
 ##Group Member
 - Bui Duc Minh Cao 

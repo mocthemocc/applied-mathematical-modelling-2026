@@ -1,5 +1,6 @@
 # Applied-Mathematical-Modelling-2026
 # Applied Mathematical Modelling Group Project
+## Group Member
 - Bui Duc Minh Cao 
 - Jake 
 ## Working Project Topic

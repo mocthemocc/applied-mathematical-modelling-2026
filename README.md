@@ -2,7 +2,7 @@
 # Applied Mathematical Modelling Group Project
 ## Group Member
 - Bui Duc Minh Cao 
-- Jake 
+- Jake Pedersen
 ## Working Project Topic
 To be confirmed.
 ## Project Objective

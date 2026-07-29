@@ -9,7 +9,7 @@ To be confirmed.
 To be confirmed after topic selection and lecturer feedback.
 ## Weekly Workflow
 1. Assign weekly tasks.
-2. Record time in Toggl.
+2. Record time in Toggl (maybe)
 3. Upload outputs to the relevant folder.
 4. Review each other's work.
 5. Complete the Weekly Progress Report.

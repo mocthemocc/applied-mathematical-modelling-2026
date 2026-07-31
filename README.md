@@ -5,8 +5,7 @@
 - Jake Pedersen
 - Adam Zaltsman 
 ## Working Project Topic
-Predator - Prey System 
-Investigate the Lotka–Volterra equations
+Predator-Prey System: modelling population dynamics using the Lotka–Volterra equations. Specific predator/prey species and data source to be finalized.
 ## Project Objective
 To be confirmed after topic selection and lecturer feedback.
 ## Weekly Workflow

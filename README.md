@@ -3,8 +3,10 @@
 ## Group Member
 - Bui Duc Minh Cao 
 - Jake Pedersen
+- Adam Zaltsman 
 ## Working Project Topic
-To be confirmed.
+Predator - Prey System 
+Investigate the Lotka–Volterra equations
 ## Project Objective
 To be confirmed after topic selection and lecturer feedback.
 ## Weekly Workflow

@@ -5,7 +5,7 @@
 - Jake Pedersen
 - Adam Zaltsman 
 ## Working Project Topic
-Predator-Prey System: modelling population dynamics using the Lotka–Volterra equations. Specific predator/prey species and data source to be finalized.
+Building Energy Consumption: modelling the heating and cooling energy requirements of a building. Working title: "Powered heating and cooling model of buildings". (See meeting-minutes/2026-08-07-topic-change.md for background.)
 ## Project Objective
 To be confirmed after topic selection and lecturer feedback.
 ## Weekly Workflow

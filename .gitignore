@@ -1,0 +1,16 @@
+# Saved-webpage assets from the course site (21+ MB of JS/CSS, not project work)
+Content_files/
+Content.html
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Office temp files
+~$*

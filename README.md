@@ -7,7 +7,7 @@
 ## Working Project Topic
 Building Energy Consumption: modelling the heating and cooling energy requirements of a building. Working title: "Powered heating and cooling model of buildings".
 
-Case study: an ice hockey stadium (narrowed at the Week 4 meeting, 14/08/2026).
+Case study: an ice hockey stadium.
 ## Project Objective
 To be confirmed after topic selection and lecturer feedback.
 ## Weekly Workflow

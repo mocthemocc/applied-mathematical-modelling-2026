@@ -23,12 +23,13 @@ weekly on Friday 3:00–4:00 PM.
 
 ## 2. Weekly Timeline
 
-| Week | Date | Activities | Output |
+| Week | Date | Activities | Owner |
 | --- | --- | --- | --- |
-| 5 | 21/08 | Finalise research question for the stadium case | 1 paragraph |
-| | | State modelling assumptions | Assumption list |
-| | | Identify state variables and parameters, with units | Symbol table |
-| | | Draft energy balance for the air volume and the ice surface | 2 governing equations |
-| | | Compile physical parameter table | Table with sources |
-| | | Literature review — heat balance of ice rinks, refrigeration load, humidity control | 5–8 sources + notes |
-| | | Define project scope and objectives | Scope statement |
+| 5 | 21/08 | Clearly define the research question | Adam |
+| | | Preliminary modelling assumptions | Jake |
+| | | Identification of main variables and parameters | Jake |
+| | | Initial mathematical model / governing equations | Cao |
+| | | Prepare a clear project plan outlining key activities and timeline | Cao |
+| | | Review relevant literature related to the project topic | Adam, Cao, Jake |
+| | | Define project scope and objectives | TBC |
+| | | Compile physical parameter table | TBC |

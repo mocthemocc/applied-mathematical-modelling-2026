@@ -18,9 +18,6 @@
 | Presentation slides | 11 | Fri 02/10/2026 | 10–12 slides |
 | Final Report + Presentation | 12 | Fri 09/10/2026 | 15–25 pages |
 
-A Weekly Progress Report (1–2 pages) is submitted every week, and the group meets
-weekly on Friday 3:00–4:00 PM.
-
 ## 2. Weekly Timeline
 
 | Week | Date | Activities | Owner |

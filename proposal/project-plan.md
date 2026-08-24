@@ -4,9 +4,6 @@
 **Group:** Bui Duc Minh Cao, Jake Pedersen, Adam Zaltsman
 **Version:** Draft 3 — 17/08/2026
 
-> Dates below are the Friday of each teaching week, derived from the Week 2–4
-> meeting sequence (31/07, 07/08, 14/08). **To be checked against the unit outline**
-> in case a mid-semester break shifts them.
 
 ## 1. Milestones
 

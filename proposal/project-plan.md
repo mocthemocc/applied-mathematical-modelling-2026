@@ -1,29 +1,43 @@
-# Project Plan — Key Activities and Timeline
+# Project Plan
 
-**Project:** Powered heating and cooling model of buildings — case study: an ice hockey stadium
-**Group:** Bui Duc Minh Cao, Jake Pedersen, Adam Zaltsman
+MATH3001 Applied Mathematical Modelling
 
+**Project:** Powered heating and cooling model of buildings — case study: Ice hockey stadium
 
+**Group Members:** Bui Duc Minh Cao (20937120), Jake Pedersen (21975066), Adam Zaltsman (20448350)
 
-## 1. Milestones
+**Submission Date:** 28/08/2026
 
-| Deliverable | Week | Date | Length |
-| --- | --- | --- | --- |
-| Group Progress Report — Tasks 3 & 4 | 6 | Fri 28/08/2026, 11:59 PM | — |
-| Research Proposal | 7 | Fri 04/09/2026 | 4–6 pages |
-| Progress Report | 10 | Fri 25/09/2026 | 5–8 pages |
-| Presentation slides | 11 | Fri 02/10/2026 | 10–12 slides |
-| Final Report + Presentation | 12 | Fri 09/10/2026 | 15–25 pages |
+## 1. Project Plan
 
-## 2. Weekly Timeline
+The table below sets out the planned activities and the teaching weeks in which they are carried out.
 
-| Week | Date | Activities | Owner |
-| --- | --- | --- | --- |
-| 5 | 21/08 | Clearly define the research question | Adam |
-| | | Preliminary modelling assumptions | Jake |
-| | | Identification of main variables and parameters | Jake |
-| | | Initial mathematical model / governing equations | Cao |
-| | | Prepare a clear project plan outlining key activities and timeline | Cao |
-| | | Review relevant literature related to the project topic | Adam, Cao, Jake |
-| | | Define project scope and objectives | TBC |
-| | | Compile physical parameter table | TBC |
+| Task | Week |
+| --- | --- |
+| Literature review | 3–7 |
+| Model formulation — assumptions, variables, continuity equation | 4–6 |
+| Governing equations — energy balance (follows Heat Transfer Modelling, Ch 6) | 7 and 9 |
+| Mathematical analysis — steady-state solution and term reduction | 9–10 |
+| Numerical simulation — Python implementation and verification | 10–12 |
+| Interpretation of results — scenario comparison and parameter sensitivity | 12–13 |
+| Report preparation | 12–14 |
+| Presentation preparation | 14 |
+
+## 2. Key Submission Dates
+
+| Deliverable | Week | Date |
+| --- | --- | --- |
+| Group Progress Report — Tasks 3 and 4 | 6 | Fri 28/08/2026, 11:59 PM |
+| Research Proposal | 7 | Fri 04/09/2026 |
+| Progress Report | [TO CONFIRM] | [TO CONFIRM] |
+| Presentation slides | [TO CONFIRM] | [TO CONFIRM] |
+| Final Report and Presentation | [TO CONFIRM] | [TO CONFIRM] |
+
+## 3. Division of Responsibilities
+
+| Member | Responsibilities |
+| --- | --- |
+| Bui Duc Minh Cao | Governing equations; project scope and objectives; project plan and timeline |
+| Jake Pedersen | Modelling assumptions; identification of variables and parameters |
+| Adam Zaltsman | Definition of the research question |
+| All members | Literature review |

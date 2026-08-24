@@ -2,7 +2,7 @@
 
 **Project:** Powered heating and cooling model of buildings — case study: an ice hockey stadium
 **Group:** Bui Duc Minh Cao, Jake Pedersen, Adam Zaltsman
-**Version:** Draft 3 — 17/08/2026
+
 
 
 ## 1. Milestones

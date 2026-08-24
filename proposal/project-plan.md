@@ -29,7 +29,7 @@ The table below sets out the planned activities and the teaching weeks in which 
 
 | Deliverable | Week | Date |
 | --- | --- | --- |
-| Group Progress Report — Tasks 3 and 4 | 6 | Fri 28/08/2026, 11:59 PM |
+| Group Progress Report — Tasks 3 and 4 | 6 | Fri 28/08/2026 |
 | Research Proposal | 9 | Fri 18/09/2026 |
 | Updated project progress | 10 | Fri 25/09/2026 |
 | Preliminary results | 10 | Fri 25/09/2026 |

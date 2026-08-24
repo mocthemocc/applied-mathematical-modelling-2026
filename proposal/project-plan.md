@@ -4,6 +4,8 @@ MATH3001 Applied Mathematical Modelling
 
 **Project:** Powered heating and cooling model of buildings — case study: Ice hockey stadium
 
+**Group Number:** 8
+
 **Group Members:** Bui Duc Minh Cao (20937120), Jake Pedersen (21975066), Adam Zaltsman (20448350)
 
 **Submission Date:** 28/08/2026

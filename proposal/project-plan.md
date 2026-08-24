@@ -27,15 +27,15 @@ The table below sets out the planned activities and the teaching weeks in which 
 
 ## 2. Key Submission Dates
 
-| Deliverable | Week | Length | Date |
-| --- | --- | --- | --- |
-| Group Progress Report — Tasks 3 and 4 | 6 | 1–2 pages | Fri 28/08/2026, 11:59 PM |
-| Research Proposal | 9 | 4–6 pages | Fri 18/09/2026 |
-| Updated project progress | 10 | 1–2 pages | Fri 25/09/2026 |
-| Preliminary results | 10 | 1–2 pages | Fri 25/09/2026 |
-| Progress Report | 11 | 5–8 pages | Fri 02/10/2026 |
-| Presentation slides | 13 | 10–12 slides | Fri 16/10/2026 |
-| Final Report | 14 | 15–25 pages | Fri 23/10/2026 |
+| Deliverable | Week | Date |
+| --- | --- | --- |
+| Group Progress Report — Tasks 3 and 4 | 6 | Fri 28/08/2026, 11:59 PM |
+| Research Proposal | 9 | Fri 18/09/2026 |
+| Updated project progress | 10 | Fri 25/09/2026 |
+| Preliminary results | 10 | Fri 25/09/2026 |
+| Progress Report | 11 | Fri 02/10/2026 |
+| Presentation slides | 13 | Fri 16/10/2026 |
+| Final Report | 14 | Fri 23/10/2026 |
 
 ## 3. Division of Responsibilities
 

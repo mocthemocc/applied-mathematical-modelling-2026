@@ -2,7 +2,7 @@
 
 **Project:** Powered heating and cooling model of buildings — case study: an ice hockey stadium
 **Group:** Bui Duc Minh Cao, Jake Pedersen, Adam Zaltsman
-**Version:** Draft 4 — 24/08/2026
+**Version:** Draft 3 — 17/08/2026
 
 > Dates below are the Friday of each teaching week, derived from the Week 2–4
 > meeting sequence (31/07, 07/08, 14/08). **To be checked against the unit outline**
@@ -30,28 +30,3 @@
 | | | Review relevant literature related to the project topic | Adam, Cao, Jake |
 | | | Define project scope and objectives | TBC |
 | | | Compile physical parameter table | TBC |
-
-## 3. Gantt Chart
-
-```mermaid
-gantt
-    title Ice Hockey Stadium Energy Model
-    dateFormat YYYY-MM-DD
-    axisFormat %d/%m
-
-    section Week 5
-    Research question (Adam)                 :w5a, 2026-08-17, 5d
-    Modelling assumptions (Jake)             :done, w5b, 2026-08-17, 5d
-    Variables and parameters (Jake)          :done, w5c, 2026-08-17, 5d
-    Governing equations (Cao)                :w5d, 2026-08-17, 5d
-    Project plan (Cao)                       :done, w5e, 2026-08-17, 1d
-    Literature review (all)                  :w5f, 2026-08-17, 5d
-    Scope and objectives (TBC)               :w5g, 2026-08-17, 5d
-
-    section Submissions
-    Group Progress Report, Tasks 3 and 4     :milestone, m1, 2026-08-28, 0d
-    Research Proposal                        :milestone, m2, 2026-09-04, 0d
-    Progress Report                          :milestone, m3, 2026-09-25, 0d
-    Presentation slides                      :milestone, m4, 2026-10-02, 0d
-    Final Report and Presentation            :milestone, m5, 2026-10-09, 0d
-```

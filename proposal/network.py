@@ -65,9 +65,9 @@ axL.text(4.82, 8.46, 'sign set by season', fontsize=7.5, color=MUTED)
 # heat into the upper zone: plant plus internal gains
 axL.annotate('', xy=(6.4, 6.30), xytext=(6.4, 5.55),
              arrowprops=dict(arrowstyle='-|>', color=HOT, lw=1.8, mutation_scale=13))
-axL.text(6.6, 5.80, '$\\dot{Q}_H + \\dot{Q}_{int}$', fontsize=10, color=HOT,
+axL.text(6.6, 5.80, '$\\dot{Q}_H$', fontsize=10, color=HOT,
          fontweight='bold')
-axL.text(6.6, 5.40, 'plant, occupants, lighting', fontsize=7.5, color=INK2)
+axL.text(6.6, 5.40, 'heating plant', fontsize=7.5, color=INK2)
 
 axL.annotate('', xy=(5.0, 3.08), xytext=(5.0, 3.75),
              arrowprops=dict(arrowstyle='-|>', color=INK, lw=1.6, mutation_scale=12))
@@ -133,15 +133,11 @@ resistor(YS['out'] - NR, YS['U'] + NR, '$K_{env}$', '$=U_{env}A_{env}$', MUTED)
 resistor(YS['U']  - NR, YS['L'] + NR, '$K_{UL}$',  '$=U_{UL}A_{UL}$',   INK)
 resistor(YS['L']  - NR, YS['ice'] + NR, '$K_{LI}$', '$=U_{LI}A_{ice}$', COLD)
 
-# two sources into T_U: Q_H (unknown, solved for) and Q_int (prescribed)
+# heat source into T_U: Q_H (unknown, solved for)
 XS, XJ = 2.15, 3.10
 source(XS, YS['U'], '$\\dot{Q}_H$', 'heating plant\n(unknown)', HOT)
 axR.plot([XS + 0.30, XN - NR], [YS['U'], YS['U']], color=HOT, lw=1.7, zorder=2)
 
-source(XS, YS['U'] + 1.30, '$\\dot{Q}_{int}$', 'occupants,\nlighting', HOT)
-axR.plot([XS + 0.30, XJ], [YS['U'] + 1.30, YS['U'] + 1.30], color=HOT, lw=1.7, zorder=2)
-axR.plot([XJ, XJ], [YS['U'] + 1.30, YS['U']], color=HOT, lw=1.7, zorder=2)
-axR.add_patch(Circle((XJ, YS['U']), 0.075, fc=HOT, ec=HOT, lw=0, zorder=6))
 
 axR.annotate('', xy=(XN, 1.05), xytext=(XN, YS['ice'] - NR),
              arrowprops=dict(arrowstyle='-|>', color=COLD, lw=2.4, mutation_scale=16))

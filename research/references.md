@@ -24,6 +24,6 @@ Requirements of Indoor Ice Rinks." *Energy and Buildings* 41: 500–511.
 <https://www.sciencedirect.com/science/article/pii/S0378778808002600>
 — Yearly energy requirements of indoor ice rinks.
 
-Frahm, Moritz. 2024. Occupant-Oriented Demand Response with Model Predictive Heating Control in a Multi-Zone Residential Building. PhD thesis, Karlsruhe Institute of Technology.
+Frahm, Moritz. 2024. Occupant-Oriented Demand Response with Model Predictive Heating Control in a Multi-Zone Residential Building. PhD thesis, Karlsruhe Institute of Technology. https://publikationen.bibliothek.kit.edu/1000174124.
 
-Harrikari, Aki-Matti. 2020. Multivariate Analysis of Heat Transfer in Ice Rinks with Carbon Dioxide as a Refrigerant. Master's thesis, Aalto University.
+Harrikari, Atte-Mainio. 2020. Multivariate Analysis of Heat Transfer in Ice Rinks with Carbon Dioxide as a Refrigerant. Master's thesis, Aalto University, School of Chemical Engineering. https://aaltodoc.aalto.fi/handle/123456789/45703.

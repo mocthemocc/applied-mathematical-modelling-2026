@@ -4,6 +4,19 @@ Chicago 18th edition, Author–Date.
 
 ---
 
+Frahm, Moritz. 2024. *Occupant-Oriented Demand Response with Model Predictive Heating
+Control in a Multi-Zone Residential Building*. PhD thesis, Karlsruhe Institute of
+Technology.
+<https://publikationen.bibliothek.kit.edu/1000174124>
+— Two-zone RC thermal network; drawing convention for the network diagram.
+
+Harrikari, Atte-Mainio. 2020. *Multivariate Analysis of Heat Transfer in Ice Rinks with
+Carbon Dioxide as a Refrigerant*. Master's thesis, Aalto University, School of Chemical
+Engineering.
+<https://aaltodoc.aalto.fi/bitstreams/b0bad862-2a50-475a-9ca6-98549bea0df5/download>
+— Thermal resistance network for an ice rink; two-panel layout of physical section and
+network.
+
 International Ice Hockey Federation. 2025. *IIHF Official Rulebook 2025/26*. Version 1.1.
 Zurich: IIHF.
 <https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/3_the_iihf/2025-26_iihf_rulebook_22122025-v1.pdf>
@@ -23,7 +36,3 @@ Seghouani, Lotfi, Ahmed Daoud, and Nicolas Galanis. 2009. "Prediction of Yearly 
 Requirements of Indoor Ice Rinks." *Energy and Buildings* 41: 500–511.
 <https://www.sciencedirect.com/science/article/pii/S0378778808002600>
 — Yearly energy requirements of indoor ice rinks.
-
-Frahm, Moritz. 2024. Occupant-Oriented Demand Response with Model Predictive Heating Control in a Multi-Zone Residential Building. PhD thesis, Karlsruhe Institute of Technology. https://publikationen.bibliothek.kit.edu/1000174124.
-
-Harrikari, Atte-Mainio. 2020. Multivariate Analysis of Heat Transfer in Ice Rinks with Carbon Dioxide as a Refrigerant. Master's thesis, Aalto University, School of Chemical Engineering. https://aaltodoc.aalto.fi/handle/123456789/45703.

@@ -1,12 +1,15 @@
 """Two-zone thermal model of an indoor ice rink.
 
-(a) physical system  - building section: upper/lower air zones, ice, cooled slab
-(b) thermal network  - conductances K = UA between the four temperature nodes
+(a) physical system  - building section: upper/lower air zones, ice, cooled slab,
+                       and the non-ice concrete floor surrounding the rink
+(b) thermal network  - conductances K = UA between the five temperature nodes
 
 MATH3001 Group 8. Steady state, so no capacitances appear in the network.
 """
 import os
 
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Rectangle, FancyBboxPatch
 
@@ -46,15 +49,35 @@ axL.text(8.45, 2.76, '$T_L$   lower zone', fontsize=8.5, color=COLD,
          ha='right', va='center')
 
 # ice sheet on the refrigerated slab
-axL.add_patch(Rectangle((1.4, 2.15), 7.2, 0.29, fc=COLD, alpha=0.30,
+axL.add_patch(Rectangle((2.0, 2.15), 6.0, 0.29, fc=COLD, alpha=0.30,
                         ec=COLD, lw=1.4, zorder=3))
-axL.text(8.45, 2.29, '$T_{ice}$   ice sheet', fontsize=8.5, color=COLD,
-         ha='right', va='center')
-axL.add_patch(Rectangle((1.4, 1.25), 7.2, 0.90, fc=MUTED, alpha=0.20,
+axL.text(5.0, 2.29, '$T_{ice}$   ice sheet', fontsize=8.5, color=COLD,
+         ha='center', va='center')
+axL.add_patch(Rectangle((2.0, 1.25), 6.0, 0.90, fc=MUTED, alpha=0.20,
                         ec=MUTED, lw=1.4, zorder=2))
-for i in range(11):                                    # brine pipes in the slab
-    axL.add_patch(Circle((2.0 + 0.6 * i, 1.70), 0.09, fc=SURF, ec=COLD,
+for i in range(10):                                    # brine pipes in the slab
+    axL.add_patch(Circle((2.35 + 0.59 * i, 1.70), 0.09, fc=SURF, ec=COLD,
                          lw=1.1, zorder=3))
+
+# non-ice concrete floor either side of the rink: unrefrigerated, sits under the
+# lower zone and covers A_building - A_ice
+for x0 in (1.0, 8.0):
+    axL.add_patch(Rectangle((x0, 1.25), 1.0, 1.19, fc=MUTED, alpha=0.34,
+                            ec=MUTED, lw=1.4, zorder=3))
+    for i in range(4):                                 # concrete hatching
+        axL.plot([x0 + 0.1, x0 + 0.9], [1.45 + 0.28 * i, 1.45 + 0.28 * i],
+                 color=MUTED, lw=0.6, alpha=0.7, zorder=4)
+axL.text(8.5, 1.88, '$T_{floor}$', fontsize=9.5, color=INK2, ha='center',
+         va='center', bbox=dict(fc=SURF, ec='none', pad=1.5), zorder=5)
+axL.text(8.5, 1.52, 'concrete', fontsize=7.5, color=MUTED, ha='center',
+         va='center', bbox=dict(fc=SURF, ec='none', pad=1.2), zorder=5)
+axL.text(1.5, 1.52, 'concrete', fontsize=7.5, color=MUTED, ha='center',
+         va='center', bbox=dict(fc=SURF, ec='none', pad=1.2), zorder=5)
+
+# lower zone gives heat to the non-ice floor as well as to the ice
+axL.annotate('', xy=(1.5, 2.44), xytext=(1.5, 2.92),
+             arrowprops=dict(arrowstyle='-|>', color=MUTED, lw=1.6, mutation_scale=12))
+axL.text(1.68, 2.58, '$\\dot{Q}_{LF}$', fontsize=10, color=MUTED, ha='left')
 
 # envelope loss to outside
 axL.annotate('', xy=(4.6, 9.15), xytext=(4.6, 8.25),
@@ -67,23 +90,23 @@ axL.annotate('', xy=(6.4, 6.30), xytext=(6.4, 5.55),
              arrowprops=dict(arrowstyle='-|>', color=HOT, lw=1.8, mutation_scale=13))
 axL.text(6.6, 5.80, '$\\dot{Q}_H$', fontsize=10, color=HOT,
          fontweight='bold')
-axL.text(6.6, 5.40, 'heating plant', fontsize=7.5, color=INK2)
+axL.text(6.6, 5.40, 'heating element', fontsize=7.5, color=INK2)
 
 axL.annotate('', xy=(5.0, 3.08), xytext=(5.0, 3.75),
              arrowprops=dict(arrowstyle='-|>', color=INK, lw=1.6, mutation_scale=12))
 axL.text(5.2, 3.30, '$\\dot{Q}_{UL}$', fontsize=10, color=INK)
 
-axL.annotate('', xy=(2.45, 2.44), xytext=(2.45, 2.92),
+axL.annotate('', xy=(3.40, 2.44), xytext=(3.40, 2.92),
              arrowprops=dict(arrowstyle='-|>', color=COLD, lw=1.6, mutation_scale=12))
-axL.text(2.27, 2.56, '$\\dot{Q}_{LI}$', fontsize=10, color=COLD, ha='right')
+axL.text(3.58, 2.56, '$\\dot{Q}_{LI}$', fontsize=10, color=COLD, ha='left')
 
-axL.annotate('', xy=(6.0, 1.00), xytext=(6.0, 2.0),
+axL.annotate('', xy=(5.00, 1.00), xytext=(5.00, 2.0),
              arrowprops=dict(arrowstyle='-|>', color=COLD, lw=2.4, mutation_scale=16))
-axL.text(6.2, 1.02, '$\\dot{Q}_C$', fontsize=12, color=COLD, fontweight='bold')
-axL.text(6.2, 0.62, 'refrigeration slab', fontsize=8, color=COLD)
+axL.text(5.20, 1.02, '$\\dot{Q}_C$', fontsize=12, color=COLD, fontweight='bold')
 
-axL.text(1.3, 0.95, 'Closed system: internal air circulation only,\nno outside-air exchange.',
-         fontsize=8, color=INK2, style='italic', linespacing=1.4, va='top')
+
+axL.text(4.6, 0.55, 'Closed system: internal air circulation only, no outside-air exchange.',
+         fontsize=8, color=INK2, style='italic', ha='center', va='top')
 
 # thermal network
 axR = fig.add_subplot(gs[0, 1]); axR.set_facecolor(SURF)
@@ -114,6 +137,17 @@ def resistor(y0, y1, label, expr, colour):
     axR.text(XN + 0.44, ym - 0.22, expr, fontsize=8.5, color=INK2, va='center',
              bbox=dict(fc=SURF, ec='none', pad=1.2), zorder=4)
 
+def hresistor(x0, x1, y, label, expr, colour):
+    xm = (x0 + x1) / 2
+    axR.plot([x0, xm - 0.42], [y, y], color=colour, lw=1.7, zorder=2)
+    axR.plot([xm + 0.42, x1], [y, y], color=colour, lw=1.7, zorder=2)
+    axR.add_patch(Rectangle((xm - 0.42, y - 0.24), 0.84, 0.48,
+                            fc=SURF, ec=colour, lw=1.9, zorder=3))
+    axR.text(xm, y + 0.48, label, fontsize=11.5, color=colour, ha='center',
+             va='center', fontweight='bold')
+    axR.text(xm, y - 0.52, expr, fontsize=8.5, color=INK2, ha='center',
+             va='center', bbox=dict(fc=SURF, ec='none', pad=1.2), zorder=4)
+
 def source(cx, cy, sym, note, colour):
     axR.add_patch(Circle((cx, cy), 0.30, fc=SURF, ec=colour, lw=1.9, zorder=4))
     axR.annotate('', xy=(cx, cy + 0.17), xytext=(cx, cy - 0.17),
@@ -133,9 +167,18 @@ resistor(YS['out'] - NR, YS['U'] + NR, '$K_{env}$', '$=U_{env}A_{env}$', MUTED)
 resistor(YS['U']  - NR, YS['L'] + NR, '$K_{UL}$',  '$=U_{UL}A_{UL}$',   INK)
 resistor(YS['L']  - NR, YS['ice'] + NR, '$K_{LI}$', '$=U_{LI}A_{ice}$', COLD)
 
+# non-ice floor branches sideways off the lower zone: prescribed, like T_out
+XF = 1.15
+axR.add_patch(Circle((XF, YS['L']), NR, fc=MUTED, ec=MUTED, lw=2.0, zorder=5))
+axR.text(XF, YS['L'] - 0.46, '$T_{floor}$', fontsize=12.5, color=MUTED,
+         ha='center', va='top')
+axR.text(XF, YS['L'] - 0.92, 'non-ice floor', fontsize=7.5, color=INK2,
+         ha='center', va='top')
+hresistor(XF + NR, XN - NR, YS['L'], '$K_{LF}$', '$=U_{LF}A_{floor}$', MUTED)
+
 # heat source into T_U: Q_H (unknown, solved for)
 XS, XJ = 2.15, 3.10
-source(XS, YS['U'], '$\\dot{Q}_H$', 'heating plant\n(unknown)', HOT)
+source(XS, YS['U'], '$\\dot{Q}_H$', 'heating element\n(unknown)', HOT)
 axR.plot([XS + 0.30, XN - NR], [YS['U'], YS['U']], color=HOT, lw=1.7, zorder=2)
 
 
@@ -143,7 +186,7 @@ axR.annotate('', xy=(XN, 1.05), xytext=(XN, YS['ice'] - NR),
              arrowprops=dict(arrowstyle='-|>', color=COLD, lw=2.4, mutation_scale=16))
 axR.text(XN - 0.26, 1.46, '$\\dot{Q}_C$', fontsize=12.5, color=COLD,
          fontweight='bold', ha='right', va='center')
-axR.text(XN - 0.26, 1.02, 'refrigeration\nextraction (unknown)', fontsize=7.5,
+axR.text(XN - 0.26, 1.02, 'cooling element\n(unknown)', fontsize=7.5,
          color=COLD, ha='right', va='center', linespacing=1.3)
 
 from matplotlib.patches import FancyArrowPatch
@@ -156,7 +199,9 @@ axR.text(7.55, 4.15, '$\\dot{Q}_{rad}$', fontsize=10.5, color=OPT, va='center',
          fontweight='bold')
 axR.text(7.55, 3.74, 'ceiling to ice,', fontsize=7.5, color=OPT, va='center')
 axR.text(7.55, 3.44, 'transparent to air', fontsize=7.5, color=OPT, va='center')
-axR.text(7.55, 3.02, 'OPTIONAL', fontsize=7.5, color=OPT, va='center', fontweight='bold')
+axR.text(7.55, 3.02, 'NOT MODELLED', fontsize=7.5, color=OPT, va='center',
+         fontweight='bold')
+axR.text(7.55, 2.70, 'see assumptions', fontsize=7, color=OPT, va='center')
 
 # legend, single row along the bottom
 axR.add_patch(Circle((0.30, 0.35), 0.15, fc=MUTED, ec=MUTED, lw=1.6))
@@ -175,7 +220,8 @@ fig.text(0.035, 0.895,
          fontsize=9, color=INK2, ha='left')
 fig.text(0.035, 0.845,
          'No thermal capacitances are shown: the primary model is steady state, so '
-         'accumulation terms vanish.',
+         'accumulation terms vanish.  $T_{floor}$ is prescribed at the upper-zone '
+         'temperature.',
          fontsize=8.5, color=MUTED, ha='left', style='italic')
 
 OUTDIR = os.path.join(os.path.expanduser('~'), 'Documents', 'School',
@@ -185,4 +231,3 @@ if not os.path.isdir(OUTDIR):
 out = os.path.join(OUTDIR, 'Thermal_Network.png')
 plt.savefig(out, dpi=200, facecolor=SURF, bbox_inches='tight', pad_inches=0.32)
 print('saved ->', out)
-plt.show()

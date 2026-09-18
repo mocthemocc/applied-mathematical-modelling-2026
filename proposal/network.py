@@ -199,9 +199,6 @@ axR.text(7.55, 4.15, '$\\dot{Q}_{rad}$', fontsize=10.5, color=OPT, va='center',
          fontweight='bold')
 axR.text(7.55, 3.74, 'ceiling to ice,', fontsize=7.5, color=OPT, va='center')
 axR.text(7.55, 3.44, 'transparent to air', fontsize=7.5, color=OPT, va='center')
-axR.text(7.55, 3.02, 'NOT MODELLED', fontsize=7.5, color=OPT, va='center',
-         fontweight='bold')
-axR.text(7.55, 2.70, 'see assumptions', fontsize=7, color=OPT, va='center')
 
 # legend, single row along the bottom
 axR.add_patch(Circle((0.30, 0.35), 0.15, fc=MUTED, ec=MUTED, lw=1.6))

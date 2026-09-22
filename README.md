@@ -36,8 +36,8 @@ refrigerated at the same time.
 The scripts are in `proposal/code/` .
 
 ```
-python sens.py        # sensitivity analysis, no dependencies
-python network.py     # thermal network figure, needs matplotlib
+python sens.py        # sensitivity analysis
+python network.py     # thermal network figure
 ```
 
 ## Weekly Workflow

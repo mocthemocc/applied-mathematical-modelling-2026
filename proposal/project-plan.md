@@ -41,7 +41,6 @@ The table below sets out the planned activities and the teaching weeks in which 
 
 | Member | Responsibilities |
 | --- | --- |
-| Bui Duc Minh Cao | Governing equations; project scope and objectives; project plan and timeline |
-| Jake Pedersen | Modelling assumptions; identification of variables and parameters |
-| Adam Zaltsman | Definition of the research question |
-| All members | Literature review |
+| Bui Duc Minh Cao | Literature review; determining governing equations; preliminary modelling in Python; thermal network diagram; project plan and Gantt chart; error checking; numerical implementation; report preparation and presentation |
+| Jake Pedersen | Literature review; preliminary modelling in Excel; introduction; 3D model; problem statement; numerical implementation; report preparation and presentation |
+| Adam Zaltsman | Literature review; referencing; project objectives; proposed solution; expected outcomes; numerical implementation; report preparation and presentation |

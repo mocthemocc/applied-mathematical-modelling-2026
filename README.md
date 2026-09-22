@@ -1,7 +1,5 @@
 # Applied Mathematical Modelling Group Project
 
-MATH3001, Curtin University, Semester 2 2026. Group 8.
-
 ## Group Members
 
 - Bui Duc Minh Cao
@@ -10,12 +8,12 @@ MATH3001, Curtin University, Semester 2 2026. Group 8.
 
 ## Project Topic
 
-Building Energy Consumption: modelling the heating and cooling energy
+Building Energy Consumption: Modelling the heating and cooling energy
 requirements of a building.
 
 **Thermal Energy Consumption of Heating and Cooling an Ice Rink**
 
-Case study: an indoor ice hockey stadium, modelled as two lumped thermal
+Case study: An indoor ice hockey stadium, modelled as two lumped thermal
 zones. The upper zone is held at a comfort temperature for spectators while
 the lower zone sits above the ice surface, so the building must be heated and
 refrigerated at the same time.
@@ -35,14 +33,12 @@ refrigerated at the same time.
 
 ## Running the Code
 
-The scripts are in `proposal/code/` and need Python 3.
+The scripts are in `proposal/code/` .
 
 ```
 python sens.py        # sensitivity analysis, no dependencies
 python network.py     # thermal network figure, needs matplotlib
 ```
-
-`network.py` writes `Thermal_Network.png` into `proposal/`.
 
 ## Weekly Workflow
 

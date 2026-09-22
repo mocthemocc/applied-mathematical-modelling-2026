@@ -221,10 +221,8 @@ fig.text(0.035, 0.845,
          'temperature.',
          fontsize=8.5, color=MUTED, ha='left', style='italic')
 
-OUTDIR = os.path.join(os.path.expanduser('~'), 'Documents', 'School',
-                      'Applied Mathematical Modelling')
-if not os.path.isdir(OUTDIR):
-    OUTDIR = os.path.dirname(os.path.abspath(__file__))
+# the figure belongs beside the proposal documents, one level up from here
+OUTDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 out = os.path.join(OUTDIR, 'Thermal_Network.png')
 plt.savefig(out, dpi=200, facecolor=SURF, bbox_inches='tight', pad_inches=0.32)
 print('saved ->', out)

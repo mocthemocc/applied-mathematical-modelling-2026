@@ -5,7 +5,7 @@
 - Jake Pedersen
 - Adam Zaltsman 
 ## Working Project Topic
-Building Energy Consumption: modelling the heating and cooling energy requirements of a building. Working title: "Powered heating and cooling model of buildings".
+Building Energy Consumption: modelling the heating and cooling energy requirements of a building. Working title: "Thermal Energy Consumption of Heating and Cooling an Ice Rink".
 
 Case study: an ice hockey stadium.
 ## Project Objective

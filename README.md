@@ -44,39 +44,6 @@ python network.py     # thermal network figure, needs matplotlib
 
 `network.py` writes `Thermal_Network.png` into `proposal/`.
 
-## Division of Responsibilities
-
-**Jake**
-
-- Literature review
-- Preliminary modelling in Excel
-- Introduction
-- Created 3D model
-- Problem statement
-- Numerical implementation
-- Report preparation and presentation
-
-**Cao**
-
-- Literature review
-- Determining governing equations
-- Preliminary modelling in Python
-- Created thermal network diagram
-- Project plan and Gantt chart
-- Errors
-- Numerical implementation
-- Report preparation and presentation
-
-**Adam**
-
-- Literature review
-- Referencing
-- Project objectives
-- Proposed solution
-- Expected outcomes
-- Numerical implementation
-- Report preparation and presentation
-
 ## Weekly Workflow
 
 1. Assign weekly tasks.
